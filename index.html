@@ -3,50 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="style.css"></head>
     <title>Your Time</title>
 </head>
 <body>
-    <div class="container">
+     <div class="container">
     <h1>World Clock</h1>
     
     <select>
         <option value="">Select a city</option>
-        <option value=""> 🏴󠁧󠁢󠁥󠁮󠁧󠁿 London</option>
-        <option value=""> 🇵🇹 Lisbon</option>
-        <option value=""> 🇧🇷 São Paulo</option>
-        <option value=""> 🇩🇪 Düsseldorf</option>
-        <option value=""> 🇦🇺 Sydney</option>
-        <option value=""> 🇪🇸 Madrid</option>
-        <option value=""> 🇺🇸 New York</option>
-        <option value=""> 🇳🇱 Amsterdam</option>
+        <option value="">London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
+        <option value="">Lisbon 🇵🇹</option>
+        <option value="">São Paulo 🇧🇷</option>
+        <option value="">Düsseldorf 🇩🇪</option>
+        <option value="">Sydney 🇦🇺</option>
+        <option value="">Madrid 🇪🇸</option>
+        <option value="">New York 🇺🇸</option>
+        <option value="">Amsterdam 🇳🇱</option>
     </select>
-    <div class="cities">
-        <h2>New York</h2>
-        <div class="date">August 15th 2024</div>
-        <div class="time">17:15:15 PM</div>       
-    </div>
-    <div class="cities">
-        <h2>Lisbon</h2>
-        <div class="date">August 15th 2024</div>
-        <div class="time">12:15:15 PM</div>
-    </div>
-    <div class="cities">
-        <h2>Madrid</h2>
-        <div class="date">August 15th 2024</div>
-        <div class="time">17:15:15 PM</div>
-    </div>
-    <div class="cities">
-        <h2>Düsseldorf</h2>
-        <div class="date">August 15th 2024</div>
-        <div class="time">12:15:15 PM</div>
-    </div>
-    </div>
+    
+        <div class="city">
+            <div>
+                <h2>New York</h2>
+                <div class="date">August 15th 2024</div>
+            </div>
+            <div class="time">17:15:15 <small>PM</small></div>
+        </div>
 
+        <div class="city">
+            <div>
+                <h2>São Paulo</h2>
+                <div class="date">August 15th 2024</div>
+            </div>
+            <div class="time">17:15:15 <small>PM</small></div>
+        </div>
+
+        <div class="city">
+            <div>
+                <h2>Porto</h2>
+                <div class="date">August 15th 2024</div>
+            </div>
+            <div class="time">17:15:15 <small>PM</small></div>
+        </div>
+
+        <div class="city">
+            <div>
+                <h2>Düsseldorf</h2>
+                <div class="date">August 15th 2024</div>
+            </div>
+            <div class="time">17:15:15 <small>PM</small></div>
+        </div>
+
+
+
+
+
+
+    </div>
     <footer>
-        This project was coded by <a href="https://www.linkedin.com/in/camillascardoso/" target="_blank">Camilla Cardoso</a> and is open sourced on <a href="https://github.com/hicamilla/World-Clock-Add-On-W2.git" target="_blank">GitHub</a> and hosted on <a href="https://ultimateworldtime.netlify.app" target="_blank">Netlify</a>.
+        This project was coded by <a href="https://www.linkedin.com/in/camillascardoso/" target="_blank">Camilla Cardoso</a>
+        and is open sourced on <a href="https://github.com/hicamilla/World-Clock-Add-On-W2.git" target="_blank">GitHub</a>
+        and hosted on <a href="https://ultimateworldtime.netlify.app" target="_blank">Netlify</a>.
     </footer>
     <script src="index.js"></script>
 </body>
