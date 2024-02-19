@@ -16,7 +16,7 @@ function updateTime() {
    if (dusseldorfElement) {
    let dusseldorfDateElement = dusseldorfElement.querySelector(".date");
    let dusseldorfTimeElement = dusseldorfElement.querySelector(".time");
-   let dusseldorfTime = moment().tz("Europe/Dusseldorf");
+   let dusseldorfTime = moment().tz("Europe/Berlin");
 
    dusseldorfDateElement.innerHTML = dusseldorfTime.format("MMMM, Do YYYY");
    dusseldorfTimeElement.innerHTML = dusseldorfTime.format("H:mm:ss [<small>]A[</small>]");
