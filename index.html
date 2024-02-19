@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
     <link rel="stylesheet" href="style.css"></head>
@@ -15,21 +17,22 @@
      <div class="container">
     <h1>World Clock</h1>
     
-    <select>
+    <select id="city">
         <option value="">Select a city</option>
-        <option value="">London 🏴󠁧󠁢󠁥󠁮󠁧󠁿</option>
-        <option value="">Lisbon 🇵🇹</option>
-        <option value="">São Paulo 🇧🇷</option>
-        <option value="">Düsseldorf 🇩🇪</option>
-        <option value="">Sydney 🇦🇺</option>
-        <option value="">Madrid 🇪🇸</option>
-        <option value="">New York 🇺🇸</option>
-        <option value="">Amsterdam 🇳🇱</option>
+        <option value="Europe/Lisbon">Lisbon 🇵🇹</option>
+        <option value="America/Sao_Paulo">São Paulo 🇧🇷</option>
+        <option value="Europe/Berlin">Düsseldorf 🇩🇪</option>
+        <option value="Australia/Sydney">Sydney 🇦🇺</option>
+        <option value="Europe/Madrid">Madrid 🇪🇸</option>
+        <option value="America/New_York">New York 🇺🇸</option>
+        <option value="Europe/Amsterdam">Amsterdam 🇳🇱</option>
+        
     </select>
-    
-        <div class="city" id="newyork">
+
+    <div id="cities"> 
+        <div class="city" id="lisbon">
             <div>
-                <h2>New York</h2>
+                <h2>Lisbon</h2>
                 <div class="date"></div>
             </div>
             <div class="time"></div>
@@ -37,15 +40,7 @@
 
         <div class="city" id="saopaulo">
             <div>
-                <h2>São Paulo</h2>
-                <div class="date"></div>
-            </div>
-            <div class="time"></div>
-        </div>
-
-        <div class="city" id="porto">
-            <div>
-                <h2>Porto</h2>
+                <h2>Sao Paulo</h2>
                 <div class="date"></div>
             </div>
             <div class="time"></div>
@@ -59,8 +54,39 @@
             <div class="time"></div>
         </div>
 
+        <div class="city" id="sydney">
+            <div>
+                <h2>Sydney</h2>
+                <div class="date"></div>
+            </div>
+            <div class="time"></div>
+        </div>
 
-    </div>
+        <div class="city" id="madrid">
+            <div>
+                <h2>Madrid</h2>
+                <div class="date"></div>
+            </div>
+            <div class="time"></div>
+        </div>
+
+        <div class="city" id="newyork">
+            <div>
+                <h2>New York</h2>
+                <div class="date"></div>
+            </div>
+            <div class="time"></div>
+        </div>
+
+        <div class="city" id="amsterdam">
+            <div>
+                <h2>Amsterdam</h2>
+                <div class="date"></div>
+            </div>
+            <div class="time"></div>
+        </div>
+
+     </div>
     <footer>
         This project was coded by <a href="https://www.linkedin.com/in/camillascardoso/" target="_blank">Camilla Cardoso</a>
         and is open sourced on <a href="https://github.com/hicamilla/World-Clock-Add-On-W2.git" target="_blank">GitHub</a>
