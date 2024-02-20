@@ -74,3 +74,7 @@ setInterval(updateTime, 1000);
 
 let citiesSelectElement = document.querySelector("#city");
 citiesSelectElement.addEventListener("change", updateCity);
+
+const body = document.querySelector('body');
+const date = new Date();
+const hour = date.getHours();
